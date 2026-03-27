@@ -1,0 +1,117 @@
+╔══════════════════════════════════════════════════════════╗
+║     S. THAMIZHSELVAN PORTFOLIO — HOW TO RUN GUIDE       ║
+╚══════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 1 — OPEN PORTFOLIO INSTANTLY (No setup needed)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+→ Double-click  "index.html"
+→ It opens in Chrome/Edge immediately ✅
+→ ALL sections will be visible (Hero, Skills, Projects, etc.)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 2 — ADD YOUR PHOTO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Put your photo file (e.g. photo.jpg) in this folder
+2. Open index.html in Notepad or VS Code
+3. Find this line:
+      <div class="photo-placeholder">
+4. Replace the ENTIRE <div class="photo-placeholder">...</div>
+   block with:
+      <img src="photo.jpg" alt="Thamizhselvan"/>
+5. Save and refresh the browser ✅
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 3 — ADD YOUR RESUME (Download button)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Put your resume PDF file in this folder
+2. Rename it to:  resume.pdf
+3. The "Download Resume" button will work automatically ✅
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 4 — ADD YOUR CERTIFICATES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Create a folder named "certificates" in this folder
+2. Put your certificate images inside (e.g. cert1.jpg)
+3. Open index.html in VS Code
+4. Find the CERTIFICATES array (search "CERTIFICATES = [")
+5. Update the 'img' field for each certificate:
+   img: 'certificates/cert1.jpg'
+6. Save and refresh ✅
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 5 — RUN BACKEND (For contact form → saves to MongoDB)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Install Node.js from https://nodejs.org (LTS version)
+2. Open Command Prompt in the "backend" folder
+3. Run these commands:
+      npm install
+      copy .env.example .env
+      (Edit .env → add your MongoDB URI)
+      node server.js
+4. You'll see:
+      ✅ MongoDB connected
+      🚀 Server running on port 5000
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 6 — FREE MONGODB DATABASE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Go to: https://mongodb.com/atlas
+2. Sign up free → Create cluster
+3. Click Connect → Copy URI string
+4. Paste into backend/.env as MONGO_URI=...
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ STEP 7 — DEPLOY ONLINE FOR FREE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FRONTEND (index.html):
+→ Go to https://vercel.com
+→ Sign up → New Project → Upload folder
+→ Your portfolio is LIVE in 2 minutes! ✅
+
+BACKEND (for contact form):
+→ Go to https://render.com
+→ New Web Service → Upload backend folder
+→ Add environment variables from .env
+→ Live in 5 minutes! ✅
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ FOLDER STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+thamizh-portfolio/
+├── index.html              ← Main portfolio (open this!)
+├── resume.pdf              ← Add YOUR resume PDF here
+├── photo.jpg               ← Add YOUR photo here
+├── HOW_TO_RUN.txt          ← This file
+├── certificates/           ← Create this folder for certificates
+│   ├── cert1.jpg
+│   └── cert2.jpg
+└── backend/
+    ├── server.js
+    ├── package.json
+    └── .env.example        ← Rename to .env and fill values
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ QUICK SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Want to...                 Do this
+ ─────────────────────────────────────────────────
+ See portfolio now        → Open index.html ✅
+ Add photo                → Put photo.jpg here, edit index.html
+ Add resume               → Put resume.pdf here ✅
+ Add certificates         → certificates/ folder + update array
+ Save contact messages    → Run backend/server.js
+ Put it online            → Vercel.com (free, 2 mins)
+
+═══════════════════════════════════════════════════
+ Contact: s.thamizhselvan911@gmail.com
+ GitHub:  github.com/Thamizhselvans-tech
+═══════════════════════════════════════════════════
