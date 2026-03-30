@@ -1,0 +1,1 @@
+PUT YOUR CERTIFICATE IMAGES IN THIS FOLDER (e.g. cert1.jpg, cert2.png)
